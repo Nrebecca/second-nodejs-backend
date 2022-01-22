@@ -16,6 +16,7 @@ static newAccountRules=()=>{
         check("password","password is not strong").trim().isStrongPassword(),
         check("lastName","last name should be valid").trim().isAlpha(),
         check("firstName","first name should be valid").trim().isAlpha(),
+        check("phone","your phone number is invalid").isMobilePhone(),
         check("gender","gender should be among male,female,other,no-say")
         .trim().isIn(['male','female','other','no-say'])
     ]

@@ -3,7 +3,7 @@ const verifyAccess=(requiredRole)=>{
         try {
           const {role}=req.user;
           if(requiredRole!=role){
-              return res.status(401).json({error:"Unauthorised! you don't access to this api"});
+              return res.status(401).json({error:"Unauthorised! you don't have access to this api"});
 
           } 
           return next();

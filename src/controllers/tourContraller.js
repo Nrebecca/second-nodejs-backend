@@ -44,6 +44,7 @@ return res
 .json({message:"one tour deleted"});
 }
 
+
 }
 
 export default TourController;

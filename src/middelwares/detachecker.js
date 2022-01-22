@@ -2,7 +2,7 @@ import UserInfos from "../models/user";
    
 
 class DataChecker {
-    static async isEmailExist(req, res,next){
+    static async isEmailExist(req,res,next){
         const user = await UserInfos.findOne({email:req.body.email});
     
     if (!user){
